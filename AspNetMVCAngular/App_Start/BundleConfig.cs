@@ -9,6 +9,9 @@ namespace AspNetMVCAngular
         {
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/bundles/AspNetMVCAngular")
+                    .IncludeDirectory("~/Scripts/Controllers", "*.js")
+                    .Include("~/Scripts/AspNetMVCAngular.js"));
 
             BundleTable.EnableOptimizations = true;
         }

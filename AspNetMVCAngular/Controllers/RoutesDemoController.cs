@@ -13,11 +13,12 @@ namespace AspNetMVCAngular.Controllers
             return View();
         }
 
-        public ActionResult Two()
+        public ActionResult Two(int donuts = 1)
         {
+            ViewBag.Donuts = donuts;
             return View();
         }
-
+        [Authorize]
         public ActionResult Three()
         {
             return View();

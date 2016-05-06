@@ -11,6 +11,7 @@ namespace AspNetMVCAngular
                       "~/Content/site.css"));
             bundles.Add(new ScriptBundle("~/bundles/AspNetMVCAngular")
                     .IncludeDirectory("~/Scripts/controllers", "*.js")
+                    .IncludeDirectory("~/Scripts/Factories", "*.js")
                     .Include("~/Scripts/AspNetMVCAngular.js"));
 
             BundleTable.EnableOptimizations = true;

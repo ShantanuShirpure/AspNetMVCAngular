@@ -177,7 +177,10 @@
     <Content Include="Scripts\AspNetMVCAngular.js" />
     <Content Include="Scripts\controllers\LandingPageController.js" />
     <Content Include="Scripts\controllers\LoginController.js" />
+    <Content Include="Scripts\controllers\RegisterController.js" />
     <Content Include="Scripts\Factories\AuthHttpResponseInterceptor.js" />
+    <Content Include="Scripts\Factories\LoginFactory.js" />
+    <Content Include="Scripts\Factories\RegisterFactory.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -198,9 +201,8 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\RoutesDemo\One.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

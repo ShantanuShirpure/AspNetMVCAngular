@@ -3,10 +3,13 @@
 // Add Controllers here
 AspNetMVCAngular.controller(LandingPageController, 'LandingPageController');
 AspNetMVCAngular.controller('LoginController', LoginController);
+AspNetMVCAngular.controller('RegisterController', RegisterController);
 
 
 //Add Factories here
 AspNetMVCAngular.factory('AuthHttpResponseInterceptor', AuthHttpResponseInterceptor);
+AspNetMVCAngular.factory('LoginFactory', LoginFactory);
+AspNetMVCAngular.factory('RegisterFactory', RegisterFactory);
 
 
 //Route Config
@@ -24,6 +27,10 @@ var configFunction = function ($routeProvider,$httpProvider) {
         .when('/login', {
         templateUrl: '/Account/Login',
         controller: LoginController
+        })
+        .when('/register', {
+        templateUrl: '/Account/Register',
+        controller: RegisterController
         });
 
     $httpProvider.interceptors.push('AuthHttpResponseInterceptor');
